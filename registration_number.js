@@ -1,5 +1,4 @@
 //var show = document.getElementById('display');
-var regNumbers = [];
 
 function myFunction() {
     var user = document.getElementById("myInput").value;
@@ -12,21 +11,38 @@ function myFunction() {
     document.body.appendChild(plate);
     document.getElementById("myInput").value = "";
     regNumbers.push(plate);
-};
+}
 
-function checkTown(regNumbers, location) {
+function checkTown(location) {
     var fromTownReg = [];
     for (var i = 0; i < regNumbers.length; i++) {
-        if (regNumbers.startWith(location)) {
-            fromTownReg.push(regNumbers)
+        if (document.body.children[i].textContent.startsWith(location)) {
+            // fromTownReg.push(regNumbers)
+            document.body.children[i].style.display = 'block';
+        }else{
+            document.body.children[i].style.display = 'none';
         }
-    }return fromTownReg;
+    }
 }
-checkTown(regNumbers, "CA");
 
-function checkLocation(){
-    
+function allTown(){
+    if (document.getElementById('bellville').checked) {
+        checkTown('CY');
+
+    } else if(document.getElementById('capetown').checked) {
+        checkTown('CA');
+
+    } else if (document.getElementById('paarl').checked) {
+        checkTown('CJ')
+
+    } else if (document.getElementById('all').checked) {
+        document.body.appendChild(plate);
 }
+}
+
+
+
+
 
 
 

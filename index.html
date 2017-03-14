@@ -11,7 +11,9 @@
 
             <form class="regNumbers" action="index.html" method="post" align="center">
                 <input type="text" id="myInput" placeholder="Enter registration number">
-                <button type="button" id="myAddButton" onclick="myFunction();" />Add</button> <br>
+                <button type="button" id="myAddButton" onclick="myFunction();" />Add</button>
+                
+                <button type="button" id="filter" onclick="allTown();">Filter</button> <br>
 
                 <label for="bellville">Bellville</label>
                 <input type="radio" name="registration_number" id="bellville" value="bellville">
@@ -20,10 +22,10 @@
                 <input type="radio" name="registration_number" id="capetown" value="capetown">
 
                 <label for="paarl">Paarl</label>
-                <input type="radio" name="registration_number" id="paarl" value="paarl"><br>
+                <input type="radio" name="registration_number" id="paarl" value="paarl">
 
                 <label for="all">All</label>
-                <input type="radio" name="registration_number" id="all" value="all">
+                <input type="radio" name="registration_number" id="all" value="all"><br>
 
             </form>
 
