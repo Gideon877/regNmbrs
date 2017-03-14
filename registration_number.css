@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-color: #42ED9C;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: inherit;;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+.button {
+
+}
+.regNumbers {
+    width: 50%;
+    border: 1px solid black;
+    padding: 4%;
+    margin: auto;
+    background-color: #ADEAB1;
+}
+
+h2 {
+    font-weight: bold;
+    margin: inherit;
+    padding: 4%;
+    font-size: -webkit-xxx-large;
+    background-color: cadetblue;
+    text-decoration: blink;
+    text-shadow: 1px 1px 1px #796d15;
+}
+
+div {
+    width: 50%;
+    padding: 4%;
+    margin: auto;
+}
+
+.myReg {
+    background-color: yellow;
+    background-position: 10px 10px;
+    border: 3px solid black;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    margin-top: 5px;
+    padding: 12px 20px 12px 40px;
+    text-align: center;
+    width: 200px;
+    /*font-size: 24px;*/
+
+}
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+#footer {
+color: skyblue;
+text-transform: uppercase;
+}
+#myTable {
+border-collapse: collapse;
+width: 100%;
+border: 1px solid #ddd;
+font-size: 18px;
+}
+
+#myTable th, #myTable td {
+text-align: left;
+padding: 12px;
+}
+
+#myTable tr {
+border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+background-color: #f1f1f1;
+}
+
+body {
+
+}
+
+hr {
+    clear: both;
+    visibility: hidden;
+}
+#regNumHearder {
+  color: black;
+  font-size: 100px;
+  padding: 5%;
+}
+
+form {
+  height: inherit;
+  border: 2px solid;
+  padding: 1%;
+  background-color: crimson;
+}
+
+ul {
+  height: inherit;
+  border: 2px solid black;
+  padding: 1%;
+  background-color: yellow;
+}
+
+#display {
+  width: auto;
+}
+#user_input {
+	width: inherit;
+}
+
+#footer {
+  color: blue;
+}
+
+
+div {
+  width: 30%;
+  border: 1px solid black;
+  padding: 3%;
+  margin: auto;
+  margin-top: -5%;
+  background-color: #FAEBD7;
+}
+
+
+#show {
+  padding: 3%;
+  margin: auto;
+  text-align: center;
+  color: black;
+  font-size: 100%;
+  font-style: oblique;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+
+*/
+/*border: 2px solid black;*/
