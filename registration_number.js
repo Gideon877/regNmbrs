@@ -1,113 +1,45 @@
-//var show = document.getElementById('display');
+var showInput = document.getElementById('showInput');
 
 function myFunction() {
     var user = document.getElementById("myInput").value;
     var filter = user.toUpperCase();
     var plate = document.createElement('div');
-
-    plate.classList.add('myReg');
     var t = document.createTextNode(filter);
+    plate.classList.add('myReg');
     plate.appendChild(t);
-    document.body.appendChild(plate);
+    showInput.appendChild(plate);
     document.getElementById("myInput").value = "";
-    regNumbers.push(plate);
 }
 
 function checkTown(location) {
-    var fromTownReg = [];
-    for (var i = 0; i < regNumbers.length; i++) {
-        if (document.body.children[i].textContent.startsWith(location)) {
-            // fromTownReg.push(regNumbers)
-            document.body.children[i].style.display = 'block';
+
+    for (var i = 0; i < showInput.children.length; i++) {
+        if (showInput.children[i].textContent.startsWith(location)) {
+                showInput.children[i].style.display = '';
         }else{
-            document.body.children[i].style.display = 'none';
+            showInput.children[i].style.display = 'none';
         }
     }
 }
 
+var x = document.getElementById("myFilter");
+x.addEventListener("click", allTown);
+
 function allTown(){
     if (document.getElementById('bellville').checked) {
         checkTown('CY');
+        checkTown('cy');
+
 
     } else if(document.getElementById('capetown').checked) {
         checkTown('CA');
+        checkTown('ca')
 
     } else if (document.getElementById('paarl').checked) {
-        checkTown('CJ')
+        checkTown('CJ');
+        checkTown('cj');
 
     } else if (document.getElementById('all').checked) {
-        document.body.appendChild(plate);
+
+    }
 }
-}
-
-
-
-
-
-
-
-
-/*
-function
-
-//assert.equal(fromWhere("CY"), "Bellville");
-
-function checkTown(){
-
-if (document.getElementById('bellville').checked) {
-
-}
-}
-
-
-function myFunction() {
-var input, filter, table, tr, td, i;
-input = document.getElementById("myInput");
-filter = input.value.toUpperCase();
-table = document.getElementById("myTable");
-tr = table.getElementsByTagName("tr");
-
-for (i = 0; i < tr.length; i++) {
-td = tr[i].getElementsByTagName("td")[0];
-if (td) {
-if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-tr[i].style.display = "";
-} else {
-tr[i].style.display = "none";
-}
-}
-}
-
-function myFunction() {
-'use strict';
-var user = document.getElementById('myInput').value;
-var btn = document.createElement("li");
-
-if (user.length > 0 && user !== null){
-var t = document.createElement(user);
-btn.appendChild(t);
-document.body.appendChild(btn);
-document.getElementById("myList").appendChild(btn);
-
-} else{
-alert('Please insert a valid registration number')
-}
-}
-function regNumbers(){
-  'use strict';
-
-  var li = document.createElement('li');
-  li.textContent = user;
-  ul.appendChild(li);
-}
-}
-
-function myFunction (){
-var input, filter, div, ul;
-input = document.getElementById("myInput");
-filter = input.value.toUpperCase();
-div = document.getElementsByTagName("showInput");
-ul = document.getElementById("myList");
-
-}
-*/
