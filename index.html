@@ -12,7 +12,7 @@
                 <input type="text" id="myInput" placeholder="Enter registration number">
                 <button type="button" id="myAddButton" onclick="myFunction();" />Add</button>
 
-                <button id="myFilter" onclick="allTown();">Filter</button> <br>
+                <button type="button"id="myFilter" onclick="allTown();">Filter</button> <br>
 
                 <input type="radio" name="registration_number" id="bellville" value="bellville">
                 <label for="bellville">Bellville</label>
@@ -28,10 +28,14 @@
 
             </form>
 
-            <div id="showInput"><ul align="center"><b><u>Your Number Plate</b></u></ul></div>
-
-            <input type="radio" name="language" id="english" value="english">
-
+            <div id="showInput"></div>
     </body>
+
     <script src="registration_number.js"></script>
+
+    <!-- the footer will appear below this line-->
+    <footer id='footer' >
+        <p align="center">Posted by:<a href="https://twitter.com/gideon877"> <i>Thabang Magaola</i></a> ® <br></p>
+    </footer>
+
 </html>
