@@ -4,7 +4,6 @@
         <meta charset="utf-8">
         <title>Thabang | Registration Numbers</title>
         <link rel="stylesheet" href="registration_number.css">
-        <script src="registration_number.js"></script>
     </head>
     <body>
             <h2 align="center">Registration Number</h2>
@@ -12,25 +11,31 @@
             <form class="regNumbers" action="index.html" method="post" align="center">
                 <input type="text" id="myInput" placeholder="Enter registration number">
                 <button type="button" id="myAddButton" onclick="myFunction();" />Add</button>
-                
-                <button type="button" id="filter" onclick="allTown();">Filter</button> <br>
 
-                <label for="bellville">Bellville</label>
+                <button type="button"id="myFilter" onclick="allTown();">Filter</button> <br>
+
                 <input type="radio" name="registration_number" id="bellville" value="bellville">
+                <label for="bellville">Bellville</label>
 
-                <label for="capetown">Cape Town</label>
                 <input type="radio" name="registration_number" id="capetown" value="capetown">
+                <label for="capetown">Cape Town</label>
 
-                <label for="paarl">Paarl</label>
                 <input type="radio" name="registration_number" id="paarl" value="paarl">
+                <label for="paarl">Paarl</label>
 
-                <label for="all">All</label>
-                <input type="radio" name="registration_number" id="all" value="all"><br>
+                <input type="radio" name="registration_number" id="all" value="all">
+                <label for="all">All</label><br>
 
             </form>
 
-            <div class="showInput"><ul id="myList" align="center"><b><u>Your Number Plate</b></u></ul></div>
-            <input type="radio" name="language" id="english" value="english">
-
+            <div id="showInput"></div>
     </body>
+
+    <script src="registration_number.js"></script>
+
+    <!-- the footer will appear below this line-->
+    <footer id='footer' >
+        <p align="center">Posted by:<a href="https://twitter.com/gideon877"> <i>Thabang Magaola</i></a> ® <br></p>
+    </footer>
+
 </html>
